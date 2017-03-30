@@ -47,7 +47,7 @@ docker run -d --network=host -p 8188:8188 -p 8989:8989 -p 8088:8088 -p 8089:8089
 Configuration is shipped within the container, to copy it to the host machine use the following command (after the container is started)
 
 ```
-docker cp janus:/opt/janus/etc/janus /root/janus
+docker cp janus:/root/janus /root/janus
 ```
 
 Then restart the container

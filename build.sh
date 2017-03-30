@@ -71,5 +71,6 @@ apt-get autoremove -y \
   cmake \
   git \
   wget
+cp -R /opt/janus/etc/janus /root/janus
 apt-get clean
 rm -rf build.sh
