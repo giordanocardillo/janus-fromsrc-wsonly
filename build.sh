@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd /root
 apt-get update && apt-get install -y \
   libnice10 \
@@ -65,13 +65,11 @@ apt-get autoremove -y \
   libopus-dev \
   libogg-dev \
   libcurl4-openssl-dev \
-  pkg-config \
   gengetopt \
   libtool \
   automake \
   cmake \
   git \
-  sudo \
   wget
 apt-get clean
 rm -rf build.sh
