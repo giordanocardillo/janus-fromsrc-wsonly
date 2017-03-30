@@ -73,16 +73,5 @@ apt-get autoremove -y \
   git \
   sudo \
   wget
-#apt-get install -y \
-#  libnice10 \
-#  libglib2.0-0 \
-#  libjansson4 \
-#  libssl1.0.0 \
-#  libcurl3 \
-#  libsofia-sip-ua0 \
-#  libogg0 \
-#  libopus0 \
-#  libmicrohttpd10
 apt-get clean
 rm -rf build.sh
-
