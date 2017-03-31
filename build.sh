@@ -36,6 +36,12 @@ cd libsrtp-2.0.0
 make shared_library && make install
 cd /root
 rm -rf libsrtp-2.0.0
+git clone https://github.com/sctplab/usrsctp
+cd usrsctp
+./bootstrap
+./configure --prefix=/usr && make && make install
+cd /root
+rm -rf usrsctp
 git clone https://github.com/warmcat/libwebsockets.git
 cd libwebsockets
 git checkout v2.2-stable
