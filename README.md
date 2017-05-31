@@ -60,7 +60,7 @@ docker restart janus
 
 The image is configured to provide `janus-pp-rec` utility to convert recorded files and is stored in `/opt/janus/bin/janus-pp-rec`
 
-Currently the image is based upon debian 8, so you must use this system to make the executable work.
+The image in the master branch is based on debian 8, so you must use that OS to make the executable work.
 
 To make it work, the following libraries must be installed
 
