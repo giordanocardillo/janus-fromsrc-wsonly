@@ -80,6 +80,30 @@ To use it, copy it from the docker container
 docker cp janus:/opt/janus/bin/janus-pp-rec /usr/local/bin
 ```
 
+Then convert recordings with
+
+```
+janus-pp-rec /opt/janus/share/janus/recordings/video.mjr /opt/janus/share/janus/recordings/video.webm
+janus-pp-rec /opt/janus/share/janus/recordings/audio.mjr /opt/janus/share/janus/recordings/audio.opus
+```
+
+### Merging audio and video
+
+Install ffmpeg
+
+```
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
+sudo apt-get update
+sudo apt-get install ffmpeg
+``` 
+
+Then merge the files
+
+```
+ffmpeg -i audio.opus -i video.webm  -c:v copy -c:a opus -strict experimental mergedoutput.webm
+```
+
 ## Credits
 
 Thanks to [Meetecho](http://www.meetecho.com/en/) for the wonderful [Janus](https://janus.conf.meetecho.com/) project
