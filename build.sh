@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 cd /root
 apt-get update && apt-get install -y \
   libnice10 \
@@ -54,7 +55,7 @@ rm -rf libwebsockets
 git clone https://github.com/meetecho/janus-gateway.git
 cd janus-gateway
 sh autogen.sh
-./configure --prefix=/opt/janus
+./configure --prefix=/opt/janus --enable-post-processing
 make
 make install
 make configs

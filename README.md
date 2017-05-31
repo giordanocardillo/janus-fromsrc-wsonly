@@ -6,7 +6,7 @@
 libsrtp version:           2.0.x
 SSL/crypto library:        OpenSSL
 DataChannels support:      yes
-Recordings post-processor: no
+Recordings post-processor: yes
 TURN REST API client:      yes
 Doxygen documentation:     no
 Transports:
@@ -54,6 +54,16 @@ Then restart the container
 
 ```
 docker restart janus
+```
+
+## Converting recorded files
+
+The image is configured to provide `janus-pp-rec` utility to convert recorded files and is stored in `/opt/janus/bin/janus-pp-rec`
+
+To use this utility in the host machine I suggest to mount it as volume:
+
+```
+-v /usr/local/bin/janus-pp-rec:/opt/janus/bin/janus-pp-rec
 ```
 
 ## Credits
