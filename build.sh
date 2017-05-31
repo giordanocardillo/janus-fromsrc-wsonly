@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 cd /root
 apt-get update && apt-get install -y \
   libnice10 \
