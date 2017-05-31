@@ -1,4 +1,4 @@
-FROM debian:8
+FROM ubuntu:16.04
 COPY ./build.sh /root/build.sh
 RUN sh /root/build.sh
 EXPOSE 8188 8989 8088 8089

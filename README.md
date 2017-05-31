@@ -60,7 +60,7 @@ docker restart janus
 
 The image is configured to provide `janus-pp-rec` utility to convert recorded files and is stored in `/opt/janus/bin/janus-pp-rec`
 
-The image in the master branch is based on debian 8, so you must use that OS to make the executable work.
+The image in this branch is based on Ubuntu 16.04, so you must use that OS to make the executable work.
 
 To make it work, the following libraries must be installed
 
@@ -70,7 +70,7 @@ To make it work, the following libraries must be installed
 * `libavformat`
 
 ```
-sudo apt-get install -y libjansson4 libavutil54 libavcodec56 libavformat56
+sudo apt-get install -y libjansson4 libavutil-ffmpeg54 libavcodec-ffmpeg56 libavformat-ffmpeg56
 ```
 
 ## Credits

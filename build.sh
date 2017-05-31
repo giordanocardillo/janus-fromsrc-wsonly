@@ -24,9 +24,9 @@ apt-get update && apt-get install -y \
   libavutil-dev \
   libavcodec-dev \
   libavformat-dev \
-  libavutil54 \
-  libavcodec56 \
-  libavformat56 \
+  libavutil-ffmpeg54 \
+  libavcodec-ffmpeg56 \
+  libavformat-ffmpeg56 \
   pkg-config \
   gengetopt \
   libtool \
