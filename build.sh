@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 cd /root
 apt-get update && apt-get install -y \
   libnice10 \
@@ -20,6 +21,9 @@ apt-get update && apt-get install -y \
   libopus-dev \
   libogg-dev \
   libcurl4-openssl-dev \
+  libavutil-dev \
+  libavcodec-dev \
+  libavformat-dev \
   pkg-config \
   gengetopt \
   libtool \
@@ -71,6 +75,9 @@ apt-get autoremove -y \
   libopus-dev \
   libogg-dev \
   libcurl4-openssl-dev \
+  libavutil-dev \
+  libavcodec-dev \
+  libavformat-dev \
   gengetopt \
   libtool \
   automake \
