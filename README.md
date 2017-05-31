@@ -60,16 +60,17 @@ docker restart janus
 
 The image is configured to provide `janus-pp-rec` utility to convert recorded files and is stored in `/opt/janus/bin/janus-pp-rec`
 
-To use this utility in the host machine I suggest to mount it as volume:
-
-```
--v /usr/local/bin/janus-pp-rec:/opt/janus/bin/janus-pp-rec
-```
+Currently the image is based upon debian 8, so you must use this system to make the executable work.
 
 To make it work, the following libraries must be installed
 
+* `libjansson`
+* `libavutil`
+* `libavcodec`
+* `libavformat`
+
 ```
-libavutil54 libavcodec56 libavformat56
+sudo apt-get install -y libjansson4 libavutil54 libavcodec56 libavformat56
 ```
 
 ## Credits
