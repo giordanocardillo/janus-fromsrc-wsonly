@@ -66,6 +66,12 @@ To use this utility in the host machine I suggest to mount it as volume:
 -v /usr/local/bin/janus-pp-rec:/opt/janus/bin/janus-pp-rec
 ```
 
+To make it work, the following libraries must be installed
+
+```
+libavutil54 libavcodec56 libavformat56
+```
+
 ## Credits
 
 Thanks to [Meetecho](http://www.meetecho.com/en/) for the wonderful [Janus](https://janus.conf.meetecho.com/) project
