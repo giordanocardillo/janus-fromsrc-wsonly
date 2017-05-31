@@ -64,13 +64,14 @@ The image in this branch is **based on Ubuntu 16.04**, so you **must** use that 
 
 To make it work, the following libraries must be installed
 
+* `libglib`
 * `libjansson`
 * `libavutil`
 * `libavcodec`
 * `libavformat`
 
 ```
-sudo apt-get install -y libjansson4 libavutil-ffmpeg54 libavcodec-ffmpeg56 libavformat-ffmpeg56
+sudo apt-get install -y libglib2.0-0 libjansson4 libavutil-ffmpeg54 libavcodec-ffmpeg56 libavformat-ffmpeg56
 ```
 
 To use it, copy it from the docker container
