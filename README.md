@@ -40,14 +40,14 @@ docker pull giordanocardillo/janus-fromsrc-wsonly
 A run configuration could be the following (host network is advisable to avoid ICE problems)
 
 ```
-docker run -d --network=host -p 8188:8188 -p 8989:8989 -p 8088:8088 -p 8089:8089 -v /root/janus:/opt/janus/etc/janus --name janus giordanocardillo/janus-fromsrc-wsonly
+docker run -d --network=host -v /root/janus:/opt/janus/etc/janus --name janus giordanocardillo/janus-fromsrc-wsonly
 ```  
 
 ## Configuration samples
 Configuration is shipped within the container, to copy it to the host machine use the following command (after the container is started)
 
 ```
-docker cp janus:/root/janus /root/janus
+docker cp janus:/root/janus /root
 ```
 
 Then restart the container
